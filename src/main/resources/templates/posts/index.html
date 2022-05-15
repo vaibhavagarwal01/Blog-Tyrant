@@ -12,7 +12,7 @@
 		<tr>
 			<th>ID</th>
 			<th>Title</th>
-			<th>Content</th>
+			<!-- <th>Content</th> -->
 			<th>Date Created</th>
 			<th>Author ID</th>
 			<th class="text-center" sec:authorize="hasAuthority('ADMIN')">Action</th>
@@ -20,9 +20,13 @@
 		</thead>
 		<tbody>
 		<tr th:each="p : ${posts}">
-			<td th:text="${p.id}"></td>
-			<td th:text="${p.title}"></td>
-			<td th:text="${p.body}"></td>
+			<td>
+				<a th:href="@{/posts/view/{id}/(id=${p.id})}" th:text="${p.id}">
+				</a>
+			  </td>
+			<!-- <td th:text="${p.id}" th:href="@{/posts/view/{id}/(id=${p.id})}"></td> -->
+			<td th:text="${p.title}" th:href="@{/posts/view/{id}/(id=${p.id})}"></td>
+			<!-- <td th:text="${p.body}"></td> -->
 			<td th:text="${#dates.format(p.date, 'dd-MMM-yyyy')}"></td>
 			<td>
 				<span th:if="${p.author}" th:remove="tag">
