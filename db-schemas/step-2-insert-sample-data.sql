@@ -1,5 +1,5 @@
 
-INSERT INTO `users` (`id`, `username`, `full_name`, `password_hash`) VALUES
+INSERT INTO `users` (`id`, `user_name`, `full_name`, `password_hash`) VALUES
 	(1, 'pesho', 'Petur Petrov', 'd2de3a6d8360140858016a2ded29b754'),
 	(2, 'ivan', 'Ivan Ivanov', '88c75c78bfd909aa3e85d341863b09b5'),
 	(3, 'gosho', 'Georgi Georgiev', 'dea212cee54d411bae0bf792869c0468'),
