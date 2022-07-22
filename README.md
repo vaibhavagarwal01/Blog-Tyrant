@@ -1,7 +1,8 @@
 # Creating a Blog System with Spring MVC, Thymeleaf, JPA and MySQL
 
-OK, so I grabbed [Svetlin Nakov's](http://www.nakov.com/blog/2016/08/05/creating-a-blog-system-with-spring-mvc-thymeleaf-jpa-and-mysql/) code, made a few tweaks to use more recent versions and built my own system with some additional features like:
 
+
+### Modules
 - [x] User Validation
 - [x] Password Encryption
 - [x] Roles
@@ -10,7 +11,7 @@ OK, so I grabbed [Svetlin Nakov's](http://www.nakov.com/blog/2016/08/05/creating
 
 ## Some of the tools/components I used on this project
 
-- [x] Zend Studio 13.6(Eclipse will also work)
+- [x] Intellij Idea
 - [x] MySQL
 - [x] Maven
 - [x] Java 1.8
